@@ -34,7 +34,7 @@ const Hero = () => {
   }}
 >
 
-      <p className="text-5xl font-bold mb-2 text-[#d89a34]">WELCOME TO SAAD USWAH TRAVELS And TOURS</p>
+      <p className="text-5xl font-bold mb-2 text-[#d89a34]">WELCOME TO SAAD USWAH TRAVELS AND TOURS</p>
       <h1 className="text-3xl md:text-5xl font-semibold mb-4">
         Plan Your Umrah And Hajj Journey
       </h1>
