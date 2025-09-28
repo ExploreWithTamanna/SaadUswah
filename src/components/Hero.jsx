@@ -4,6 +4,7 @@ import { About } from './About';
 import Featured from './Featured';
 import TravelPackage from './TravelPackage';
 import HomePackage from './HomePackage';
+import ReviewSection from './ReviewSection';
 
 const Hero = () => {
   const data = [
@@ -79,6 +80,7 @@ const Hero = () => {
       <Featured />
       <TravelPackage />
       <HomePackage />
+      <ReviewSection/>
     </>
   );
 };
