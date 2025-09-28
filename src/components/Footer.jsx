@@ -13,7 +13,7 @@ const Footer = () => {
         {/* Logo and About */}
         <div>
           <div className="flex items-center gap-2 text-2xl font-bold text-[#d89a34] mb-4">
-            🕋 Qibla
+            🕋 Saad Uswah Travels And Tours
           </div>
           <p className="text-sm">
             Reflections on the significance of each ritual, immerse yourself in
@@ -68,7 +68,7 @@ const Footer = () => {
       </div>
 
       {/* Company + Newsletter */}
-      <div className="container mx-auto px-6 py-8 grid md:grid-cols-2 gap-10 border-b border-gray-700">
+      <div className="container mx-auto px-6 py-8 grid md:grid-cols-2 gap-10  border-b border-gray-700">
         <div>
           <h3 className="text-[#d89a34] font-semibold mb-4">Company</h3>
           <ul className="grid grid-cols-2 gap-2 text-sm">
@@ -83,17 +83,17 @@ const Footer = () => {
 
         <div>
           <h3 className="text-[#d89a34] font-semibold mb-4">Newsletter</h3>
-          <p className="text-sm mb-4">
+          <p className="text-sm mb-4 ">
             Metus sed Disse aliquet amet ultrices faucibus mauris sit amet
             morbi suspendisse pellentesque pulvinar interdum justo
           </p>
-          <div className="flex">
+          <div className="flex gap-3">
             <input
               type="email"
               placeholder="Your email address"
-              className="w-full p-2 rounded-l bg-gray-800 text-white border border-gray-600 focus:outline-none"
+              className=" p-2 rounded bg-gray-800 text-white border border-gray-600 focus:outline-none "
             />
-            <button className="bg-[#d89a34] px-4 py-2 rounded-r text-white">
+            <button className="bg-[#d89a34] px-4 py-2 rounded text-white">
               Subscribe
             </button>
           </div>

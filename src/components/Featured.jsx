@@ -39,11 +39,11 @@ const Featured = () => {
       </div>
 
       {/* Services grid */}
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-6xl mx-auto">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-6xl mx-auto px-5">
         {services.map((service, i) => (
           <div
             key={i}
-            className="relative rounded-lg overflow-hidden group h-64 flex items-center justify-center text-center"
+            className="relative rounded-lg overflow-hidden group h-64 flex items-center justify-center text-center "
             style={{
               backgroundImage: `url(${service.img})`,
               backgroundSize: "cover",
