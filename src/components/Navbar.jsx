@@ -30,8 +30,8 @@ const Navbar = () => {
 
         {/* Menu */}
         <ul className="hidden md:flex space-x-6">
-          <li className="hover:text-gray-200 cursor-pointer">Home</li>
-          <li className="hover:text-gray-200 cursor-pointer">About</li>
+          <li className="hover:text-gray-200 cursor-pointer"><a href="/">Home</a></li>
+          <li className="hover:text-gray-200 cursor-pointer"><a href="/about">About</a></li>
           <li className="hover:text-gray-200 cursor-pointer">Hajj & Umrah</li>
           <li className="hover:text-gray-200 cursor-pointer">Package</li>
 
@@ -92,8 +92,8 @@ const Navbar = () => {
       {/* Mobile Menu */}
       {open && (
         <ul className="md:hidden bg-[#d89a34] px-6 pb-4 space-y-2">
-          <li>Home</li>
-          <li>About</li>
+          <li><a href="/">Home</a></li>
+          <li><a href="/about">About</a></li>
           <li>Hajj & Umrah</li>
           <li>Package</li>
           <li>Blog</li>

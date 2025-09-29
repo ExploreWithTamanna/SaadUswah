@@ -1,1 +1,11 @@
 @import "tailwindcss";
+
+/* Consistent section padding */
+.section-container {
+  @apply py-16 px-6 md:px-12 lg:px-20;
+}
+
+/* Consistent button style */
+.btn-primary {
+  @apply bg-[#d89a34] text-white px-6 py-3 rounded-lg hover:bg-[#b37c28] transition font-semibold flex items-center gap-2;
+}

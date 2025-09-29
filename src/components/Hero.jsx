@@ -5,6 +5,7 @@ import Featured from './Featured';
 import TravelPackage from './TravelPackage';
 import HomePackage from './HomePackage';
 import ReviewSection from './ReviewSection';
+import BlogSection from './BlogSection';
 
 const Hero = () => {
   const data = [
@@ -75,12 +76,12 @@ const Hero = () => {
           ></path>
         </svg>
       </section>
-
+      <HomePackage />
       <About />
       <Featured />
       <TravelPackage />
-      <HomePackage />
       <ReviewSection/>
+      <BlogSection/>
     </>
   );
 };
