@@ -1,4 +1,5 @@
 import React from "react";
+import TravelPackage from "./TravelPackage";
 
 const HajjPackages = ({ pkg }) => {
   if (!pkg) {
@@ -6,6 +7,7 @@ const HajjPackages = ({ pkg }) => {
   }
 
   return (
+    <>
     <section className="bg-white py-16">
       <div className="max-w-5xl mx-auto px-6">
         {/* Top grid: Image + Details */}
@@ -50,6 +52,8 @@ const HajjPackages = ({ pkg }) => {
         )}
       </div>
     </section>
+    <TravelPackage />
+    </>
   );
 };
 
