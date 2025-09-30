@@ -4,7 +4,6 @@ import { ArrowRight } from "lucide-react";
 // Import images
 import img7 from "../assets/img7.jpg";
 
-
 const PackagesSection = () => {
   const [activeDay, setActiveDay] = useState("30 Days");
 
@@ -56,17 +55,18 @@ const PackagesSection = () => {
   ];
 
   return (
-    <section className="section-container bg-white text-center">
-     
-
+    <section className="section-container bg-gray-50 text-center">
       {/* Heading */}
+       <span className="uppercase tracking-widest text-yellow-600 font-semibold">
+          ✦ All Packages
+        </span>
       <h2 className="text-3xl md:text-4xl font-bold mb-2">
-        Explore Our <span className="text-[#d89a34]">Hajj Packages</span>
+        Explore Our 2026 Hajj Packages
       </h2>
       <p className="text-gray-600 mb-12">
         *Package price will be declared after government announcement
       </p>
-       {/* Days Filter Buttons */}
+      {/* Days Filter Buttons */}
       <div className="flex justify-center gap-3 mb-8">
         {days.map((day) => (
           <button
@@ -112,27 +112,32 @@ const PackagesSection = () => {
 
             {/* Body */}
             <div className="p-6">
-              <h3 className="text-lg font-semibold text-gray-900">{pkg.title}</h3>
+              <h3 className="text-lg font-semibold text-gray-900">
+                {pkg.title}
+              </h3>
               <p className="mt-2 text-gray-600">
                 Start From:{" "}
                 <span className="text-red-600 font-bold">{pkg.price}</span>{" "}
                 <span className="text-sm text-gray-500">({pkg.duration})</span>
               </p>
 
-              {/* Features */}
-              <h4 className="mt-4 font-semibold text-amber-600">Package Details</h4>
-              <ul className="grid grid-cols-2 gap-1 mt-2 text-gray-600 text-sm">
-                {pkg.features.map((f, i) => (
-                  <li key={i}>• {f}</li>
-                ))}
-              </ul>
+             {/* Features */}
+<h4 className="mt-4 font-semibold text-amber-600">Package Details</h4>
+<ul className="grid grid-cols-2 gap-y-2 gap-x-4 mt-2 text-gray-700 text-sm">
+  {pkg.features.map((f, i) => (
+    <li key={i} className="flex items-start gap-2 ">
+      • <span>{f}</span>
+    </li>
+  ))}
+</ul>
 
-              {/* Additional */}
-              <h4 className="mt-4 font-semibold text-amber-600">Additional</h4>
-              <ul className="grid grid-cols-2 gap-1 mt-2 text-gray-600 text-sm">
-                <li>• Accommodation</li>
-                <li>• Transportation</li>
-              </ul>
+{/* Additional */}
+<h4 className="mt-4 font-semibold text-amber-600">Additional</h4>
+<ul className="grid grid-cols-2 gap-y-2 gap-x-4 mt-2 text-gray-700 text-sm">
+  <li className="flex items-start gap-2">• Accommodation</li>
+  <li className="flex items-start gap-2">• Transportation</li>
+</ul>
+
 
               {/* Button */}
               <button className="mt-6 w-full bg-yellow-600 text-white font-semibold py-2 rounded flex items-center justify-center gap-2 hover:bg-yellow-700 transition">
