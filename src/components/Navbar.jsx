@@ -1,4 +1,5 @@
 import React, { useState, useRef, useEffect } from "react";
+import { Link } from "react-router-dom"; // <-- add this import
 import { ChevronDown } from "lucide-react";
 
 const Navbar = () => {
@@ -30,10 +31,16 @@ const Navbar = () => {
 
         {/* Menu */}
         <ul className="hidden md:flex space-x-6">
-          <li className="hover:text-gray-200 cursor-pointer"><a href="/">Home</a></li>
-          <li className="hover:text-gray-200 cursor-pointer"><a href="/about">About</a></li>
+          <li className="hover:text-gray-200 cursor-pointer">
+            <Link to="/">Home</Link>
+          </li>
+          <li className="hover:text-gray-200 cursor-pointer">
+            <Link to="/about">About</Link>
+          </li>
           <li className="hover:text-gray-200 cursor-pointer">Hajj & Umrah</li>
-          <li className="hover:text-gray-200 cursor-pointer">Package</li>
+          <li className="hover:text-gray-200 cursor-pointer">
+            <Link to="/package">Package</Link>
+          </li>
 
           {/* Dropdown (click only) */}
           <li className="relative cursor-pointer" ref={dropdownRef}>
@@ -92,10 +99,16 @@ const Navbar = () => {
       {/* Mobile Menu */}
       {open && (
         <ul className="md:hidden bg-[#d89a34] px-6 pb-4 space-y-2">
-          <li><a href="/">Home</a></li>
-          <li><a href="/about">About</a></li>
+          <li>
+            <Link to="/">Home</Link>
+          </li>
+          <li>
+            <Link to="/about">About</Link>
+          </li>
           <li>Hajj & Umrah</li>
-          <li>Package</li>
+          <li>
+            <Link to="/package">Package</Link>
+          </li>
           <li>Blog</li>
           <li>Contact Us</li>
         </ul>
