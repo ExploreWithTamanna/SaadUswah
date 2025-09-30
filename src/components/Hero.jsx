@@ -29,7 +29,7 @@ const Hero = () => {
   return (
     <>
       <section
-        className="relative bg-cover bg-center text-center text-white py-24 z-0"
+        className="relative bg-cover bg-center text-center text-white py-24 z-0 mb-30"
         style={{
           backgroundImage: `linear-gradient(to right, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0.6) 50%), url(${heroImg})`,
         }}
@@ -65,7 +65,7 @@ const Hero = () => {
 
         {/* SVG Curve */}
         <svg
-          className="absolute bottom-[-70px] left-0 w-full scale-y-50 origin-bottom"
+          className="absolute bottom-[-100px] left-0 w-full scale-y-50 origin-bottom"
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 1440 320"
         >

@@ -1,12 +1,12 @@
 import React from "react";
 import { ArrowRight } from "lucide-react";
-
-// Import images
+import { useNavigate } from "react-router-dom";
 import img7 from "../assets/img7.jpg";
 
 
 const packages = [
   {
+    id: 1,
     title: "Economy Umrah Package",
     price: "$2,200",
     duration: "9 days",
@@ -19,8 +19,12 @@ const packages = [
       "Meals",
       "Pilgrimage Services",
     ],
+    moreDetails: `This Economy Umrah Package is designed for budget-conscious travelers.
+It includes 3-star hotel accommodations within walking distance of the holy mosque,
+daily meals, group transport, and religious guidance throughout your journey.`,
   },
   {
+    id: 2,
     title: "Family-Friendly Umrah Experience",
     price: "$2,700",
     duration: "12 days",
@@ -33,8 +37,12 @@ const packages = [
       "Meals",
       "Pilgrimage Services",
     ],
+    moreDetails: `Our Family-Friendly Umrah package provides 4-star accommodation with family rooms,
+meals included, group transportation, and a dedicated guide. Activities are arranged
+to make the trip easier for children and elderly members.`,
   },
   {
+    id: 3,
     title: "Budget-Friendly Hajj Experience",
     price: "$15,500",
     duration: "30 days",
@@ -47,10 +55,16 @@ const packages = [
       "Meals",
       "Pilgrimage Services",
     ],
+    moreDetails: `This Hajj package offers 30 days of comfortable 4-star accommodation,
+all meals included, and private bus transport between holy sites.
+It also covers government Hajj fees, visa processing, and religious seminars.`,
   },
 ];
 
+
 const HomePackage = () => {
+  const navigate = useNavigate();
+
   return (
     <section className="py-16 bg-gray-50">
       {/* Heading */}
@@ -68,9 +82,9 @@ const HomePackage = () => {
 
       {/* Cards */}
       <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto px-4">
-        {packages.map((pkg, index) => (
+        {packages.map((pkg) => (
           <div
-            key={index}
+            key={pkg.id}
             className="bg-white rounded-xl shadow-md overflow-hidden border hover:shadow-lg transition"
           >
             {/* Top Section with background image and overlay */}
@@ -118,7 +132,10 @@ const HomePackage = () => {
               </ul>
 
               {/* Button */}
-              <button className="mt-6 w-full bg-yellow-600 text-white font-semibold py-2 rounded flex items-center justify-center gap-2 hover:bg-yellow-700 transition">
+              <button
+                onClick={() => navigate(`/package/${pkg.id}`, { state: pkg })}
+                className="mt-6 w-full bg-yellow-600 text-white font-semibold py-2 rounded flex items-center justify-center gap-2 hover:bg-yellow-700 transition"
+              >
                 More Detail <ArrowRight size={16} />
               </button>
             </div>

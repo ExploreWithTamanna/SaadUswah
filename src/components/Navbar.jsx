@@ -37,7 +37,6 @@ const Navbar = () => {
           <li className="hover:text-gray-200 cursor-pointer">
             <Link to="/about">About</Link>
           </li>
-          <li className="hover:text-gray-200 cursor-pointer">Hajj & Umrah</li>
           <li className="hover:text-gray-200 cursor-pointer">
             <Link to="/package">Package</Link>
           </li>
@@ -105,7 +104,6 @@ const Navbar = () => {
           <li>
             <Link to="/about">About</Link>
           </li>
-          <li>Hajj & Umrah</li>
           <li>
             <Link to="/package">Package</Link>
           </li>
