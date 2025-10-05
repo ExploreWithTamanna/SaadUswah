@@ -40,6 +40,9 @@ const Navbar = () => {
           <li className="hover:text-gray-200 cursor-pointer">
             <Link to="/package">Package</Link>
           </li>
+          <li className="hover:text-gray-200 cursor-pointer">
+            <Link to="/faq">FAQ</Link>
+          </li>
 
           {/* Dropdown (click only) */}
           <li className="relative cursor-pointer" ref={dropdownRef}>
@@ -78,7 +81,9 @@ const Navbar = () => {
           </li>
 
           <li className="hover:text-gray-200 cursor-pointer">Blog</li>
-          <li className="hover:text-gray-200 cursor-pointer">Contact Us</li>
+          <li className="hover:text-gray-200 cursor-pointer">
+                          <Link to="/contact">Contact Us</Link>
+          </li>
         </ul>
 
         {/* Book Now Button (hidden on mobile) */}
@@ -108,7 +113,14 @@ const Navbar = () => {
             <Link to="/package">Package</Link>
           </li>
           <li>Blog</li>
-          <li>Contact Us</li>
+          <li>
+            <Link to="/contact">Contact Us</Link>
+
+          </li>
+          <li>
+            <Link to="/faq">FAQ</Link>
+          </li>
+          
         </ul>
       )}
     </nav>
